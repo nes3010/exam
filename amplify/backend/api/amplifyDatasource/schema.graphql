@@ -1,0 +1,12 @@
+type Task @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  title: String!
+  description: String
+  status: String
+}
+
+type Note @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  content: String!
+}
+ 
